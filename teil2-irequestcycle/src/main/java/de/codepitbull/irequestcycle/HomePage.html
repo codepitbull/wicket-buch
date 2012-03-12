@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>IRequesTCycle</title>
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+	</head>
+	<body>
+		<div id="hd">
+			<div id="logo">
+				<h1>IRequestCycle</h1>
+			</div>
+		</div>
+		<div id="bd">
+			<h2>IRequestCycle</h2>
+			<p>
+				Durch dass Klicken des Links wird eine CustomException ausgel&ouml;st.
+				Der registrierte CustomExceptionListener reagiert mit einem Redirect auf CustomExceptionPage.
+			</p>
+			<p>
+				Zus&auml;tzlich wird die Laufzeit der einzelnen Requests mit dem StatefulPerformanceListener ausgewertet
+				und als Logmeldung ausgegeben.
+			</p>
+			<a wicket:id="causeException"><wicket:message key="causeException"/></a>
+		</div>
+		<div id="ft">
+		</div>
+	</body>
+</html>

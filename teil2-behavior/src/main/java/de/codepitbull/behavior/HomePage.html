@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>Behavior-Beispiele</title>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
+	      type='text/css'/>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet"/>
+</head>
+<body>
+<div id="hd">
+	<div id="logo">
+		<h1>Behavior</h1>
+	</div>
+</div>
+<div id="bd">
+	<h2>Behavior</h2>
+	<p>
+		Roundtrips zeigt an wie oft das AjaxSelfUpdatingBehavior ausgelöst wurde.<br/>
+		Autocomplete nimmt Eingaben entegegen und fügt sie der Liste der mögichen Optionen hinzu.
+	</p>
+	<p>
+		 Roundtrips: <span wicket:id="roundtrips">0</span>
+	</p>
+	<p>
+		<form wicket:id="inputForm">
+			Autocomplete : <input type="text" wicket:id="autocomplete" />
+		</form>
+	</p>
+</div>
+<div id="ft">
+</div>
+</body>
+</html>

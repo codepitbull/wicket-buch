@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>Markup-Beispiele</title>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
+	      type='text/css'/>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet"/>
+</head>
+<body>
+<div id="hd">
+	<div id="logo">
+		<h1>Markup</h1>
+	</div>
+</div>
+<div id="bd">
+	<h2>Markup</h2>
+	<p>
+		Auf dieser Seite wurden 3 Labels via Enclosure versteckt.<br/>
+		Zus&auml;tzlich wurden 2 Fragmente eingebaut zwischen denen durch <b>Fragment wechseln</b> geswitcht werden kann.
+
+	</p>
+	<p>
+		<div wicket:enclosure="zweitesLabel">
+			<span wicket:id="erstesLabel"/>
+			<span wicket:id="zweitesLabel"/>
+			<span wicket:id="drittesLabel"/>
+		</div>
+		<span wicket:id="panel">testPanel</span>
+		<wicket:fragment wicket:id="fragment1">Inhalt Fragment 1</wicket:fragment>
+		<wicket:fragment wicket:id="fragment2">Inhalt Fragment 2</wicket:fragment>
+	    <br />
+		<a wicket:id="changeVisibility">Fragment wechseln</a>
+	</p>
+</div>
+<div id="ft">
+</div>
+</body>
+</html>

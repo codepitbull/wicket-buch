@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>Apache Wicket Quickstart</title>
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+	</head>
+	<body>
+		<div id="hd">
+		</div>
+		<div id="bd">
+			<span wicket:id="testText">Text wird ersetzt</span>
+			<form wicket:id="conversationForm">
+				<wicket:message key="inputLabel"/>
+				<input type="text" wicket:id="inputField"/>
+				<a wicket:id="submit"><wicket:message key="submit"/></a>
+				<a wicket:id="commit"><wicket:message key="commit"/></a>
+			</form>
+		</div>
+		<div id="ft">
+		</div>
+	</body>
+</html>

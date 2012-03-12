@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>Resource-Beispiele</title>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
+	      type='text/css'/>
+</head>
+<body>
+<div id="hd">
+	<div id="logo">
+		<h1>Resource</h1>
+	</div>
+</div>
+<div id="bd">
+	<h2>Resource</h2>
+	<p>
+		Das CSS dieser Seite wird als ResourceReference in onRenderHead eingebaut.<br/>
+		Das Bild wird dynamisch asu einem BufferedImage erzeugt. Was fehlt ist die korrekte Cachesteuerung.
+	</p>
+	<p>
+		<img wicket:id="dynamicImage"/>
+	</p>
+</div>
+<div id="ft">
+</div>
+</body>
+</html>

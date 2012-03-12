@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>Behavior-Beispiele</title>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
+	      type='text/css'/>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet"/>
+</head>
+<body>
+<div id="hd">
+	<div id="logo">
+		<h1>Behavior</h1>
+	</div>
+</div>
+<div id="bd">
+	<h2>Events</h2>
+	<p>
+		<b>Inhalt</b> zeigt die Zahl der in der Automplete-Liste gespeicherten Elemente an.<br/>
+		<b>Autocomplete</b> erlaubt die Eingabe neuer Elemente und die Verwendung bereits eingetragener Elemente.<br/>
+		<b>reset</b> setzt die Liste zurück<br/>
+		Alle Komponenten sind lose durch Events gekoppelt.
+	</p>
+	<p>
+		 Inhalt: <span wicket:id="inhalt">0</span>
+	</p>
+	<p>
+		<form wicket:id="inputForm">
+			Autocomplete : <input type="text" wicket:id="autocomplete" />
+		</form>
+	</p>
+	<p>
+		<a wicket:id="resetLink">reset</a>
+	</p>
+</div>
+<div id="ft">
+</div>
+</body>
+</html>
+

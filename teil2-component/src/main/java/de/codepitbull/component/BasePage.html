@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<meta charset="utf-8"/>
+	<title>Component-Beispiele</title>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
+	      type='text/css'/>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet"/>
+</head>
+<body>
+<div id="hd">
+	<div id="logo">
+		<h1>Component</h1>
+	</div>
+</div>
+<div id="bd">
+	<h2>Component</h2>
+	<p>
+		In diesem Beispiel wird sowohl die Vererbung von Markup als auch die Implementierung <br/>
+		einer eigenen Komponente (UserPanel) samt Internationalisierung demonstriert.
+	</p>
+	<wicket:child>
+		Wird von ableitenden Klassen gefuellt.
+	</wicket:child>
+</div>
+<div id="ft">
+</div>
+</body>
+</html>

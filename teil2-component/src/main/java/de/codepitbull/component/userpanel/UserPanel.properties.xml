@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>UserPanel-properties</comment>
+	<entry key="userName">Benutzername</entry>
+	<entry key="firstName">Vorname</entry>
+	<entry key="lastName">Nachname</entry>
+	<entry key="birthday">Geburtstag</entry>
+</properties>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>WiQuery-Beispiele</title>
+	</head>
+	<body>
+		<div class="clearfix">
+			<!-- START Accordion -->
+			<h2>ACCORDION</h2>
+			<div wicket:id="accordion">
+				<wicket:container wicket:id="listView">
+					<h3><a href="#"><span wicket:id="header">Header</span></a></h3>
+					<div>
+						<p><span wicket:id="text">Content</span></p>
+					</div>
+				</wicket:container>
+			</div>
+			<!-- END Accordion -->
+			<h2>TABS</h2>
+			<!-- START Tabs -->
+			<div wicket:id="tabs">
+				<a wicket:id="add">ADD</a>
+				<div wicket:id="tabs">
+					<ul>
+						<li><a href="#tab1">Default</a></li>
+					</ul>
+					<div id="tab1"><span wicket:id="default">Content</span></div>
+				</div>
+				<div wicket:id="hidden">
+					<span>HELLO</span>
+				</div>
+			</div>
+			<!-- END Tabs-->
+			<!-- START Dialog -->
+			<div wicket:id="dialog">
+				<a wicket:id="openDialog">OPEN DIALOG</a>
+				<div wicket:id="dialog">
+					<span>Content</span>
+				</div>
+			</div>
+			<!-- END Dialog -->
+		</div>
+	</body>
+</html>
