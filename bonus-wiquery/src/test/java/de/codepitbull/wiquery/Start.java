@@ -23,7 +23,12 @@ import org.eclipse.jetty.server.ssl.SslSocketConnector;
 import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.webapp.WebAppContext;
 
+import java.io.File;
+
 public class Start {
+
+    public static final String WCB_ID = "${pom.artifactId}";
+
     public static void main(String[] args) throws Exception {
         int timeout = (int) Duration.ONE_HOUR.getMilliseconds();
 
@@ -66,7 +71,15 @@ public class Start {
         WebAppContext bb = new WebAppContext();
         bb.setServer(server);
         bb.setContextPath("/");
-        bb.setWar("bonus-wiquery/src/main/webapp");
+
+        File file = new File("src/main/webapp");
+        //required as the paths are slightly different between idea and eclipse (grrr)
+        if(file.exists()) {
+            bb.setWar("src/main/webapp");
+        }
+        else {
+            bb.setWar("bonus-wiquery/src/main/webapp");
+        }
 
         // START JMX SERVER
         // MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
